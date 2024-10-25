@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Embedded Visualization</title>
+    <style>
+        /* Set body and html to be full height and remove any default margin */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Tableau visualization container */
+        #tableau-viz {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Embed Tableau Visualization -->
+    <script type='module' src='https://prod-useast-b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    <tableau-viz id='tableau-viz' src='https://prod-useast-b.online.tableau.com/t/datasavvysolutionsllc/views/Superstore/Overview' width='1920' height='871' toolbar='bottom' token="eyJhbGciOiJIUzI1NiIsImlzcyI6IjAwYmU0YzAwLTdhODktNDI4ZC1iMmY4LTVlMzE4MWNkMmFlMCIsImtpZCI6IjQxNDE0MWRjLTY1NDEtNDg4OC05MWJlLTM1ZTc2YTAzMTUwOCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIwMGJlNGMwMC03YTg5LTQyOGQtYjJmOC01ZTMxODFjZDJhZTAiLCJleHAiOjE3Mjk3ODAzMjMsImp0aSI6IjUyMTNjNWI5LWVhMjQtNGE5NS05ODI0LTZjMTc5MWExZTE4ZSIsImF1ZCI6InRhYmxlYXUiLCJzdWIiOiJzamVua2luc0BEYXRhc2F2dnlTb2x1dGlvbnMubmV0Iiwic2NwIjpbInRhYmxlYXU6dmlld3M6ZW1iZWQiLCJ0YWJsZWF1Om1ldHJpY3M6ZW1iZWQiXSwiaHR0cHM6Ly90YWJsZWF1LmNvbS9vZGEiOiJ0cnVlIiwiaHR0cHM6Ly90YWJsZWF1LmNvbS9ncm91cHMiOlsiQ29udHJhY3RvcnMiLCJUZWFtIEMiLCJHcm91cDEiLCJHcm91cDIiXSwiUmVnaW9uIjoiRWFzdCJ9.jmNDjzdePFwyzG3P1vWamDbTg6xZOi0IfspND6SvAJo"></tableau-viz>
+</body>
+</html>
